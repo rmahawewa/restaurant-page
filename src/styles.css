@@ -1,3 +1,14 @@
 body {
     background-color: bisque;
+    display: flex;
+
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
