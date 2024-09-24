@@ -5,7 +5,7 @@ function itm(itmid,img_src,name,description,price) {
                                 <img id=`+ itmid +` class="img" src=`+ img_src +`>
                                 <label class='itm-name'>`+ name +`</label>
                                 <button class='`+ itmid +`-dtls'>Details</button>
-                                <label class='price ` + itmid + `'>`+ price +` per one (50% off for first three days)</label>
+                                <label class='price ` + itmid + `'>`+ price +` (50% off for first three days)</label>
                 </div>`;
     return {item};
 }
