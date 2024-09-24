@@ -135,14 +135,14 @@ nav{
     border: 1rem solid aquamarine;
 }
 
-.img-div{
+.img{
     width: 16rem;
     height: 16rem;
     background-size: 16rem 16rem;
 }
 
-#bft1{
+/* #bft1{
     background-image: url("./img/breakfast/cheese.png");
     
-}
+} */
 
