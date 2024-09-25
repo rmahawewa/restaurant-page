@@ -81,7 +81,7 @@ nav{
 .menu{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 3fr, 2fr, 2fr;
     background-color: aqua;
     margin-right: 1rem;
 }
@@ -92,7 +92,6 @@ nav{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    /* grid-template-rows: 1fr, 1fr, 1fr; */
     background-color: aquamarine;
 }
 
@@ -101,6 +100,7 @@ nav{
     grid-row: 2/3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
     background-color: blueviolet;
 }
 
@@ -109,6 +109,7 @@ nav{
     grid-row: 3/4;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
     background-color: cadetblue;
 }
 
@@ -132,13 +133,25 @@ nav{
     display: flex;
     flex-direction: column;
     gap:0.5rem;
-    border: 1rem solid aquamarine;
+    /* border: 1rem solid ; */
 }
 
 .img{
     width: 16rem;
     height: 16rem;
     background-size: 16rem 16rem;
+}
+
+.breakfast .item{
+    border: 1rem solid aquamarine;
+}
+
+.lunch .item{
+    border: 1rem solid blueviolet;
+}
+
+.dinner .item{
+    border: 1rem solid cadetblue;
 }
 
 /* #bft1{

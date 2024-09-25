@@ -1,4 +1,6 @@
 import {list_breakfast_items} from "./food_items.js";
+import {list_lunch_items} from "./food_items.js";
+import {list_dinner_items} from "./food_items.js";
 
 function itm(itmid,img_src,name,description,price) {
     let item = `<div class='item'>
@@ -12,7 +14,7 @@ function itm(itmid,img_src,name,description,price) {
 
 function food_items(time, menu_arr) {    
     let list = () => {
-        let brkfst = '';
+        let menu = '';
         for(let i=0; i<menu_arr.length; i++){
             let num = i + 1;
             let itmid = time + num;
@@ -20,15 +22,19 @@ function food_items(time, menu_arr) {
             let item_name = menu_arr[i].name;
             let description = menu_arr[i].description;
             let price = menu_arr[i].price;
-            brkfst += itm(itmid, img_src, item_name, description, price).item;
+            menu += itm(itmid, img_src, item_name, description, price).item;
         }
-        return brkfst;
+        return menu;
     }    
     return {list};
 }
 
 let breakfast_items = list_breakfast_items;
+let lunch_items = list_lunch_items;
+let dinner_items = list_dinner_items;
 let brft = food_items("bft", breakfast_items);
+let lnch = food_items("lnch", lunch_items);
+let dinr = food_items("dnr", dinner_items);
 
 
 let create_menu = `<div class="meal-time">
@@ -39,8 +45,8 @@ let create_menu = `<div class="meal-time">
                     <div class='menu' >
                         <div class='breakfast' >`+ brft.list() +`
                         </div>
-                        <div class='lunch' ></div>
-                        <div class='dinner' >
+                        <div class='lunch' >`+ lnch.list() +`</div>
+                        <div class='dinner' >`+ dinr.list() +`
                         </div>
                         <div class='beverages' >
                         </div>

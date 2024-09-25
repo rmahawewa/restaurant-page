@@ -17,6 +17,25 @@ import bfst16 from "./asset/resource/img/breakfast/sweet_potato.png";
 import bfst17 from "./asset/resource/img/breakfast/chickpeas.png";
 import bfst18 from "./asset/resource/img/breakfast/rice.png";
 
+import lnch1 from "./asset/resource/img/lunch/baked_beans.png";
+import lnch2 from "./asset/resource/img/lunch/corn_soup.png";
+import lnch3 from "./asset/resource/img/lunch/mixed_veg_noodles.png";
+import lnch4 from "./asset/resource/img/lunch/mixed_veg_rice.png";
+import lnch5 from "./asset/resource/img/lunch/pasta_and_cheese.png";
+import lnch6 from "./asset/resource/img/lunch/pasta_with_herb_source.png";
+import lnch7 from "./asset/resource/img/lunch/roasted_veggies.png";
+import lnch8 from "./asset/resource/img/lunch/smashed_potatoes.jpg";
+import lnch9 from "./asset/resource/img/lunch/veg_burger.jpeg";
+
+import dnr1 from "./asset/resource/img/dinner/idli.png";
+import dnr2 from "./asset/resource/img/dinner/masala_dosa.png";
+import dnr3 from "./asset/resource/img/dinner/pasta_salad.png";
+import dnr4 from "./asset/resource/img/dinner/dumpling_soup.png";
+import dnr5 from "./asset/resource/img/dinner/pizza.png";
+import dnr6 from "./asset/resource/img/dinner/upma.png";
+import dnr7 from "./asset/resource/img/dinner/veg_soup.png";
+import dnr8 from "./asset/resource/img/dinner/veggie_salad.png";
+
 function food_item(id,image_src,name,description,price){
     return {id, image_src, name, description, price}
 }
@@ -60,4 +79,58 @@ list_breakfast_items.push(b15);
 list_breakfast_items.push(b16);
 list_breakfast_items.push(b17);
 
-export {list_breakfast_items};
+let l0 = food_item(0, dnr1, "Baked beans", "Ingredients: Green beans, butter, salt, pepper powder", "$ 1.85");
+let l1 = food_item(1, dnr2, "Corn soup", "Ingredients: Corn seeds, Corn flour, mushrooms, garlic, butter, salt, pepper powder", "$ 1.85");
+let l2 = food_item(2, dnr3, "Mixed veg noogles", "Ingredients: Wheat noobles, vegitables, sesami seeds, butter, salt, pepper powder", "$ 2.25");
+let l3 = food_item(3, dnr4, "Mixe veg rice", "Ingredients: Rice, vegitables, mushroom, green peas, corn seeds, raisins, cashews, mint, celery, basil, butter, salt", "$ 4.45");
+let l4 = food_item(4, dnr5, "Pasta and cheese", "Ingredients: Wheat pasta, Fresh milk, Cheese, fried mushroom, garlic, butter, pepper powder, salt", "$ 3.85");
+let l5 = food_item(5, dnr6, "Green pasta", "Ingredients: Wheat pasta, butter, almond milk, basil, mint, celery, rosemery, thyme, origano, salt, pepper powder", "$ 3.65");
+let l6 = food_item(6, dnr7, "Roasted veggies", "Includes: Cauliflower, Cabbage, Carrot, Okra, Squash, Celery, Potato, Corn, butter, salt, pepper powder", "$ 3.75");
+let l7 = food_item(7, dnr8, "Smashed potatoes", "Ingredients: Potato, fresh milk, butter, musted seeds, cumin seeds, basil, garlic, salt", "$ 3");
+let l8 = food_item(8, lnch9, "Veg burger", "Includes: Wheat bun, tomato, onion, celery leaves, cheese, fried mushroom, bell pepper, sesami seeds, salt, black pepper powder", "$ 2.95");
+let l9 = food_item(9, bfst18, "Rice", "Can enjoy with dhal curry. Three cups in one bawl", "$ 1.85");
+let l10 = food_item(10, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices. Three cups in one bawl", "$ 4");
+let l11 = food_item(11, bfst15, "Bread", "Whole wheat bread. Five slices for one plate", "$ 1");
+
+let list_lunch_items = [];
+list_lunch_items.push(l0);
+list_lunch_items.push(l1);
+list_lunch_items.push(l2);
+list_lunch_items.push(l3);
+list_lunch_items.push(l4);
+list_lunch_items.push(l5);
+list_lunch_items.push(l6);
+list_lunch_items.push(l7);
+list_lunch_items.push(l8);
+list_lunch_items.push(l9);
+list_lunch_items.push(l10);
+list_lunch_items.push(l11);
+
+let d0 = food_item(0, dnr1, "Idli", "Ingredients: Rice flour, Urdu dhal flour, Fenugreek powder, Salt, Water. 3 idlis for one plate", "$ 2.85");
+let d1 = food_item(1, dnr2, "Masala dosa", "Ingredients: Rice flour, Urdu dhal flour, Semolina, Water, Salt, Ghee, Potato, Cilantro, Cumin seeds, Musterd seeds, Garlic, Coconut chutney. One dosa for one plate", "$ 3");
+let d2 = food_item(2, dnr3, "Pasta salad", "Ingredients: Wheat pasta, Vegitables, Curd, Lemon juice, Salt, Black pepper.", "$ 3.25");
+let d3 = food_item(3, dnr4, "Dumpling soup", "Ingredients: Wheat flour, vegitables, mushroom, green peas, corn seeds, mint, celery, basil, butter, salt, water. Four dumplings in one bawl", "$ 4");
+let d4 = food_item(4, dnr5, "Pizza", "Ingredients: Mozeralla Cheese, Cheddar cheese, fried mushroom, cauliflower, tomato, garlic, butter, italian seasonings, pepper powder, salt", "$ 4.85");
+let d5 = food_item(5, dnr6, "Upma", "Ingredients: Semolina, butter, coconut milk, basil, celery, garlic, musted seeds, salt, green pepper. One upma for a plate", "$ 2.65");
+let d6 = food_item(6, dnr7, "Vegi soup", "Includes: Cauliflower, Cabbage, Carrot, Green onion, Squash, Celery, Potato, Corn, butter, salt, pepper powder", "$ 3.75");
+let d7 = food_item(7, dnr8, "Vegi salad", "Ingredients: Cabbage, Carrot, Cucumber, Bellpepper, Green peas, Onion, Basil, Mint, Curd, Lemon juice, Sugar, Green pepper, Black pepper. Three cups in one bawl", "$ 3");
+let d8 = food_item(8, bfst2, "Salted butter", "Fresh salted butter made from cow milk without added ingredients. 100g in one block.", "$ 2.25");
+let d9 = food_item(9, bfst18, "Rice", "Can enjoy with dhal curry. Three cups in one bawl", "$ 1.85");
+let d10 = food_item(10, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices. Three cups in one bawl", "$ 4");
+let d11 = food_item(11, bfst15, "Bread", "Whole wheat bread. Five slices for one plate", "$ 1");
+
+let list_dinner_items = [];
+list_dinner_items.push(d0);
+list_dinner_items.push(d1);
+list_dinner_items.push(d2);
+list_dinner_items.push(d3);
+list_dinner_items.push(d4);
+list_dinner_items.push(d5);
+list_dinner_items.push(d6);
+list_dinner_items.push(d7);
+list_dinner_items.push(d8);
+list_dinner_items.push(d9);
+list_dinner_items.push(d10);
+list_dinner_items.push(d11);
+
+export {list_breakfast_items, list_lunch_items, list_dinner_items};
