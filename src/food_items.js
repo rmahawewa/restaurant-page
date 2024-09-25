@@ -36,6 +36,36 @@ import dnr6 from "./asset/resource/img/dinner/upma.png";
 import dnr7 from "./asset/resource/img/dinner/veg_soup.png";
 import dnr8 from "./asset/resource/img/dinner/veggie_salad.png";
 
+import bvr1 from "./asset/resource/img/beverages/banana_milkshake.png";
+import bvr2 from "./asset/resource/img/beverages/cappuchino.png";
+import bvr3 from "./asset/resource/img/beverages/carrot_juice.png";
+import bvr4 from "./asset/resource/img/beverages/chocolate_milkshake.png";
+import bvr5 from "./asset/resource/img/beverages/espresso.png";
+import bvr6 from "./asset/resource/img/beverages/green_tea.png";
+import bvr7 from "./asset/resource/img/beverages/lemon_iced_tea.png";
+import bvr8 from "./asset/resource/img/beverages/lemon_juice.png";
+import bvr9 from "./asset/resource/img/beverages/milk_tea.png";
+import bvr10 from "./asset/resource/img/beverages/orange_juice.png";
+import bvr11 from "./asset/resource/img/beverages/orange_smoothie.png";
+import bvr12 from "./asset/resource/img/beverages/plain_black_tea.png";
+import bvr13 from "./asset/resource/img/beverages/strawberry_smoothie.png";
+import bvr14 from "./asset/resource/img/beverages/vanilla_milkshake.png";
+
+import dsrt1 from "./asset/resource/img/desserts/butterscotch_icecream.png";
+import dsrt2 from "./asset/resource/img/desserts/cherry_cheese_cake.png";
+import dsrt3 from "./asset/resource/img/desserts/chocolate_cake.png";
+import dsrt4 from "./asset/resource/img/desserts/chocolate_cheese_cake.png";
+import dsrt5 from "./asset/resource/img/desserts/chocolate_icecream.png";
+import dsrt6 from "./asset/resource/img/desserts/coconut_pannacotta.png";
+import dsrt7 from "./asset/resource/img/desserts/fruit_salad.png";
+import dsrt8 from "./asset/resource/img/desserts/lime_cheese_cake.png";
+import dsrt9 from "./asset/resource/img/desserts/plain_cheese_cake.png";
+import dsrt10 from "./asset/resource/img/desserts/red_velvet_cake.png";
+import dsrt11 from "./asset/resource/img/desserts/strawberry_cheese_cake.png";
+import dsrt12 from "./asset/resource/img/desserts/strawberry_icecream.png";
+import dsrt13 from "./asset/resource/img/desserts/tiramisu.png";
+import dsrt14 from "./asset/resource/img/desserts/vanilla_icecream.png";
+
 function food_item(id,image_src,name,description,price){
     return {id, image_src, name, description, price}
 }
@@ -79,14 +109,14 @@ list_breakfast_items.push(b15);
 list_breakfast_items.push(b16);
 list_breakfast_items.push(b17);
 
-let l0 = food_item(0, dnr1, "Baked beans", "Ingredients: Green beans, butter, salt, pepper powder", "$ 1.85");
-let l1 = food_item(1, dnr2, "Corn soup", "Ingredients: Corn seeds, Corn flour, mushrooms, garlic, butter, salt, pepper powder", "$ 1.85");
-let l2 = food_item(2, dnr3, "Mixed veg noogles", "Ingredients: Wheat noobles, vegitables, sesami seeds, butter, salt, pepper powder", "$ 2.25");
-let l3 = food_item(3, dnr4, "Mixe veg rice", "Ingredients: Rice, vegitables, mushroom, green peas, corn seeds, raisins, cashews, mint, celery, basil, butter, salt", "$ 4.45");
-let l4 = food_item(4, dnr5, "Pasta and cheese", "Ingredients: Wheat pasta, Fresh milk, Cheese, fried mushroom, garlic, butter, pepper powder, salt", "$ 3.85");
-let l5 = food_item(5, dnr6, "Green pasta", "Ingredients: Wheat pasta, butter, almond milk, basil, mint, celery, rosemery, thyme, origano, salt, pepper powder", "$ 3.65");
-let l6 = food_item(6, dnr7, "Roasted veggies", "Includes: Cauliflower, Cabbage, Carrot, Okra, Squash, Celery, Potato, Corn, butter, salt, pepper powder", "$ 3.75");
-let l7 = food_item(7, dnr8, "Smashed potatoes", "Ingredients: Potato, fresh milk, butter, musted seeds, cumin seeds, basil, garlic, salt", "$ 3");
+let l0 = food_item(0, lnch1, "Baked beans", "Ingredients: Green beans, butter, salt, pepper powder", "$ 1.85");
+let l1 = food_item(1, lnch2, "Corn soup", "Ingredients: Corn seeds, Corn flour, mushrooms, garlic, butter, salt, pepper powder", "$ 1.85");
+let l2 = food_item(2, lnch3, "Mixed veg noogles", "Ingredients: Wheat noobles, vegitables, sesami seeds, butter, salt, pepper powder", "$ 2.25");
+let l3 = food_item(3, lnch4, "Mixe veg rice", "Ingredients: Rice, vegitables, mushroom, green peas, corn seeds, raisins, cashews, mint, celery, basil, butter, salt", "$ 4.45");
+let l4 = food_item(4, lnch5, "Pasta and cheese", "Ingredients: Wheat pasta, Fresh milk, Cheese, fried mushroom, garlic, butter, pepper powder, salt", "$ 3.85");
+let l5 = food_item(5, lnch6, "Green pasta", "Ingredients: Wheat pasta, butter, almond milk, basil, mint, celery, rosemery, thyme, origano, salt, pepper powder", "$ 3.65");
+let l6 = food_item(6, lnch7, "Roasted veggies", "Includes: Cauliflower, Cabbage, Carrot, Okra, Squash, Celery, Potato, Corn, butter, salt, pepper powder", "$ 3.75");
+let l7 = food_item(7, lnch8, "Smashed potatoes", "Ingredients: Potato, fresh milk, butter, musted seeds, cumin seeds, basil, garlic, salt", "$ 3");
 let l8 = food_item(8, lnch9, "Veg burger", "Includes: Wheat bun, tomato, onion, celery leaves, cheese, fried mushroom, bell pepper, sesami seeds, salt, black pepper powder", "$ 2.95");
 let l9 = food_item(9, bfst18, "Rice", "Can enjoy with dhal curry. Three cups in one bawl", "$ 1.85");
 let l10 = food_item(10, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices. Three cups in one bawl", "$ 4");
@@ -133,4 +163,66 @@ list_dinner_items.push(d9);
 list_dinner_items.push(d10);
 list_dinner_items.push(d11);
 
-export {list_breakfast_items, list_lunch_items, list_dinner_items};
+let bev1 = food_item(0, bvr1, "Banana milk shake", "Ingredients: Vanilla ice cream, fresh milk, banana, cinnamon powder, sugar, salt, white chocolate sprincles", "$ 2.65");
+let bev2 = food_item(1, bvr2, "Cappuchino", "Ingredients: Espresso, fresh cream, three sugar cubes", "$ 2.30");
+let bev3 = food_item(2, bvr3, "Carrot juice", "300ml in a glass", "$ 1.85");
+let bev4 = food_item(3, bvr4, "Chocolate milk shake", "Ingredients: Ice cream, fresh milk, chocolate syrup, cocoa powder, instant cofee powder, cinnamon, milk chocolate flakes, sugar, scrumbles, caramel sauce, salt", "$ 3.85");
+let bev5 = food_item(4, bvr5, "Espresso", "Aromatic espresso from fresh cofee beans with three sugar cubes", "$ 1.70");
+let bev6 = food_item(5, bvr6, "Green tea", "Green tea from fresh tea leaves", "$ 1.70");
+let bev7 = food_item(6, bvr7, "Lemon iced tea", "Iced tea with fresh lemon", "$ 1.85");
+let bev8 = food_item(7, bvr8, "Lemon juice", "300ml in a glass", "$ 1.85");
+let bev9 = food_item(8, bvr9, "Milk tea", "Ingredients: Tea, fresh milk, cardemom, ginger, cloves, basil, cinnamon, sugar, salt", "$ 2.75");
+let bev10 = food_item(9, bvr10, "Orange juice", "300ml in a glass", "$ 1.85");
+let bev11 = food_item(10, bvr11, "Orange smoothie", "Ingredients: Orange, fresh cream, ice cubes, sugar, salt, mint", "$ 2.50");
+let bev12 = food_item(11, bvr12, "Black tea", "Aromatic black tea from fresh black tea leaves to boost your day. Staples thee sugar cubes.", "$ 1.70");
+let bev13 = food_item(12, bvr13, "Strawberry smoothie", "Ingredients: Strawberries, fresh cream, ice cubes, sugar, salt, mint", "$ 2.85");
+let bev14 = food_item(13, bvr14, "Vanilla milk shake", "Ingredients: Fresh milk, vanilla ice cream, fresh vanilla from beans, white chocolate, honey comb, scrumbles, caramel sauce, sugar, salt, mint", "$ 3.20");
+
+let list_beverages = [];
+list_beverages.push(bev1);
+list_beverages.push(bev2);
+list_beverages.push(bev3);
+list_beverages.push(bev4);
+list_beverages.push(bev5);
+list_beverages.push(bev6);
+list_beverages.push(bev7);
+list_beverages.push(bev8);
+list_beverages.push(bev9);
+list_beverages.push(bev10);
+list_beverages.push(bev11);
+list_beverages.push(bev12);
+list_beverages.push(bev13);
+list_beverages.push(bev14);
+
+let dst1 = food_item(0, dsrt1, "Butterscotch ice cream", "Three scoops in one wafer bawl", "$ 1.70");
+let dst2 = food_item(1, dsrt2, "Cherry cheese cake", "300g in one slice", "$ 3");
+let dst3 = food_item(2,dsrt3, "Chocolate cake", "300g in one slice", "$ 2.85");
+let dst4 = food_item(3, dsrt4, "Chocolate cheese cake", "300g in one slice", "$ 3");
+let dst5 = food_item(4, dsrt5, "Chocolate ice cream", "Three scoops in one wafer bawl", "$ 1.70");
+let dst6 = food_item(5, dsrt6, "Coconut pannacotta", "Coconut pannacotta with fresh fruit toping", "$ 2.85");
+let dst7 = food_item(6, dsrt7, "Fruit salad", "Includes: Banana, Pineapple, Papaya, Watermelon, Apple, Mango, Grapes, Kiwi, Dragon fruit, Strawberry, Sugar, Salt", "$ 3");
+let dst8 = food_item(7, dsrt8, "Lime cheese cake", "300g in one slice", "$ 3");
+let dst9 = food_item(8, dsrt9, "Cheese cake", "300g in one slice", "$ 3");
+let dst10 = food_item(9, dsrt10, "Red velvet cake", "300g in one slice", "$ 2.85");
+let dst11 = food_item(10, dsrt11, "Strawberry cheese cake", "300g in one slice", "$ 3");
+let dst12 = food_item(11, dsrt12, "Strawberry ice cream", "Three scoops in one wafer bawl", "$ 1.90");
+let dst13 = food_item(12, dsrt13, "Tiramisu", "300g in one slice", "$ 2.90");
+let dst14 = food_item(13, dsrt14, "Vanilla ice cream", "Three scoops in one wafer bawl", "$ 1.50");
+
+let list_desserts = [];
+list_desserts.push(dst1);
+list_desserts.push(dst2);
+list_desserts.push(dst3);
+list_desserts.push(dst4);
+list_desserts.push(dst5);
+list_desserts.push(dst6);
+list_desserts.push(dst7);
+list_desserts.push(dst8);
+list_desserts.push(dst9);
+list_desserts.push(dst10);
+list_desserts.push(dst11);
+list_desserts.push(dst12);
+list_desserts.push(dst13);
+list_desserts.push(dst14);
+
+export {list_breakfast_items, list_lunch_items, list_dinner_items, list_beverages, list_desserts};
