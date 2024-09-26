@@ -67,7 +67,7 @@ import dsrt13 from "./asset/resource/img/desserts/tiramisu.png";
 import dsrt14 from "./asset/resource/img/desserts/vanilla_icecream.png";
 
 function food_item(id,image_src,name,description,price){
-    return {id, image_src, name, description, price}
+    return {id, image_src, name, description}
 }
 
 let b0 = food_item(0, bfst1, "Chedar cheese","Fresh chedar cheese made from cow milk. Unsweetened. 100g in one slice.", "$ 1.85");
@@ -77,7 +77,7 @@ let b3 = food_item(3, bfst4, "Pure bee honey", "100g in one jar.", "$ 3");
 let b4 = food_item(4, bfst5, "Banana", "Cavendish banans. Three bananas included in one pack.", "$ 1");
 let b5 = food_item(5, bfst6, "Coconut milk", "Can enjoy with Flat bread, Steamed peas or beans. 200ml in a jar", "$ 1");
 let b6 = food_item(6, bfst7, "Coconut chutney", "Ingredients: Shreaded coconut, water, curd, coconut oil, fried spices. Three cups in one bawl", "$ 3");
-let b7 = food_item(7, bfst8, "Shreader coconut and sour spice paste", "Spice paste ingredients: Red chillie, onion, ginger, lemon juice, salt. Can enjoy with steamed peas and beans or with steamed sweet potatoes. 100g of shreaded coconut in one bawl", "$ 1.85");
+let b7 = food_item(7, bfst8, "Coconut and spice paste", "Spice paste ingredients: Red chillie, onion, ginger, lemon juice, salt. Can enjoy with steamed peas and beans or with steamed sweet potatoes. 100g of shreaded coconut in one bawl", "$ 1.85");
 let b8 = food_item(8, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices. Three cups in one bawl", "$ 4");
 let b9 = food_item(9, bfst10, "Flat bread", "Ingredients: Wheat flour, coconut, salt, water. 200g in one bread", "$ 1.85");
 let b10 = food_item(10, bfst11, "Steamed peas and beans mix", "Ingredients: Red beans, white beans, green peas, chickpeas. Can enjoy with coconut milk or with shreaded coconut and sour spice paste. Three cups in one bawl", "$ 4");
@@ -141,7 +141,7 @@ let d1 = food_item(1, dnr2, "Masala dosa", "Ingredients: Rice flour, Urdu dhal f
 let d2 = food_item(2, dnr3, "Pasta salad", "Ingredients: Wheat pasta, Vegitables, Curd, Lemon juice, Salt, Black pepper.", "$ 3.25");
 let d3 = food_item(3, dnr4, "Dumpling soup", "Ingredients: Wheat flour, vegitables, mushroom, green peas, corn seeds, mint, celery, basil, butter, salt, water. Four dumplings in one bawl", "$ 4");
 let d4 = food_item(4, dnr5, "Pizza", "Ingredients: Mozeralla Cheese, Cheddar cheese, fried mushroom, cauliflower, tomato, garlic, butter, italian seasonings, pepper powder, salt", "$ 4.85");
-let d5 = food_item(5, dnr6, "Upma", "Ingredients: Semolina, butter, coconut milk, basil, celery, garlic, musted seeds, salt, green pepper. One upma for a plate", "$ 2.65");
+let d5 = food_item(5, dnr6, "Upma", "Ingredients: Semolina, butter, coconut milk, basil, celery, garlic, musted seeds, salt, green pepper. Four upma for a plate", "$ 2.65");
 let d6 = food_item(6, dnr7, "Vegi soup", "Includes: Cauliflower, Cabbage, Carrot, Green onion, Squash, Celery, Potato, Corn, butter, salt, pepper powder", "$ 3.75");
 let d7 = food_item(7, dnr8, "Vegi salad", "Ingredients: Cabbage, Carrot, Cucumber, Bellpepper, Green peas, Onion, Basil, Mint, Curd, Lemon juice, Sugar, Green pepper, Black pepper. Three cups in one bawl", "$ 3");
 let d8 = food_item(8, bfst2, "Salted butter", "Fresh salted butter made from cow milk without added ingredients. 100g in one block.", "$ 2.25");

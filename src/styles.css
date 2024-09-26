@@ -81,59 +81,107 @@ nav{
 .menu{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 3fr, 2fr, 2fr;
-    background-color: aqua;
+    grid-template-rows: 0.4fr, 4fr, 0.4fr, 3fr, 0.4fr, 3fr, 0.4fr, 3fr, 0.4fr, 3fr;
+    /* background-color: aqua; */
     margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+#b{
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+#l{
+    grid-column: 1/6;
+    grid-row: 3/4;
+}
+
+#d{
+    grid-column: 1/6;
+    grid-row: 5/6;
+}
+
+#ds{
+    grid-column: 1/6;
+    grid-row: 7/8;
+}
+
+#bv{
+    grid-column: 1/6;
+    grid-row: 9/10;
 }
 
 .breakfast{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    background-color: aquamarine;
-}
-
-.lunch{
-    grid-column: 1/4;
+    grid-column: 1/6;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    background-color: blueviolet;
+    /* background-color: aquamarine; */
 }
 
-.dinner{
-    grid-column: 1/4;
-    grid-row: 3/4;
+.lunch{
+    grid-column: 1/6;
+    grid-row: 4/5;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    background-color: cadetblue;
+    /* background-color: blueviolet; */
+}
+
+.dinner{
+    grid-column: 1/6;
+    grid-row: 6/7;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    /* background-color: cadetblue; */
 }
 
 .desserts{
-    grid-column: 4/5;
-    grid-row: 1/4;
+    grid-column: 1/6;
+    grid-row: 8/9;
     display: grid;
-    grid-template-columns: 1fr;
-    background-color:darkcyan
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    /* background-color: white; */
 }
 
 .beverages{
-    grid-column: 5/6;
-    grid-row: 1/4;
+    grid-column: 1/6;
+    grid-row: 10/11;
     display: grid;
-    grid-template-columns: 1fr;
-    background-color:dodgerblue;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    /* background-color: white; */
 }
 
 .item{
     display: flex;
     flex-direction: column;
     gap:0.5rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    color: navy;
+    font-weight: bold;
     /* border: 1rem solid ; */
+}
+
+.details{
+    background-color: bisque;
+    color: navy;
+    padding: 0.5rem;
+    font-weight: bold;
+    width: 5rem;
+    border: none;
+}
+
+.details:hover{
+    /* font-weight: bolder; */
+    border: 1px solid navy;
 }
 
 .img{
@@ -142,20 +190,83 @@ nav{
     background-size: 16rem 16rem;
 }
 
-.breakfast .item{
-    border: 1rem solid aquamarine;
+h1{
+    color: navy;
 }
 
-.lunch .item{
-    border: 1rem solid blueviolet;
+#discount{
+    color: navy;
+    font-size: larger;
+    margin-top: 3rem;
 }
 
-.dinner .item{
-    border: 1rem solid cadetblue;
+#modal{
+    position: fixed;
+    padding-top: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 228, 196, 0.6);
 }
 
-/* #bft1{
-    background-image: url("./img/breakfast/cheese.png");
-    
-} */
+#card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: bisque;
+    border: 3px solid navy;
+}
+
+#modal-content{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: large;
+    font-weight: bold;
+    color: olive;
+}
+
+.close{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: saddlebrown;
+    border: none;
+    font-weight: bolder;
+}
+
+#close:hover{
+    border:1px solid saddlebrown;
+}
+
+.ok-btn{
+    padding: 0.5rem;
+    font-weight: bolder;
+    width: 6rem;
+    color: white;
+    background-color: navy;
+    border: none;
+}
+
+.ok-btn:hover{
+    border: 1px solid navy;
+}
+
+#selected-img{
+    width: 250px;
+    height: 250px;
+}
 
