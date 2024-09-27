@@ -1,52 +1,73 @@
 import "./styles.css";
+import {home} from "./content.js";
 import { create_menu } from "./content.js";
 
 let option = document.querySelectorAll(".nav-btn");
-// console.log(option);
+document.querySelector("#content").innerHTML = home;
 
 let add_content = (id) => {
     let content = document.querySelector("#content");
-    if(id.localeCompare("home-btn") === 0){
 
+    if(id.localeCompare("home-btn") === 0){
+        content.innerHTML = home;
     }
     if(id.localeCompare("menu-btn") === 0){
         console.log("menu button clicked");
         content.innerHTML = create_menu;
+
+        let details_btn = document.querySelectorAll(".details");
+
+        details_btn.forEach((btn) => btn.addEventListener("click", function(){
+            console.log("details button clicked: " + btn.className);
+            let values = (btn.className).split("|");
+            let name = values[1];
+            let imgsrc = values[2];
+            let description = values[3];
+        
+            view_details(name, imgsrc, description);
+            let modal_btn = document.querySelector(".ok-btn");
+            let close_btn = document.querySelector("#close");
+            modal_btn.addEventListener("click", function(){
+                view_prev_content();
+            });
+            close_btn.addEventListener("click", function(){
+                view_prev_content();
+            });
+        }));        
+        
+        
     }
     if(id.localeCompare("about-btn") === 0){
         // content.innerHTML = ;
     }
 };
 
-// option.forEach((item) => item.addEventListner("click", add_content(item.id)));
 option.forEach((item) => item.addEventListener("click", function(){
     add_content(item.id);
 }));
 
-let details_btn = document.querySelectorAll(".details");
-details_btn.forEach((btn) => btn.addEventListener("click", function(){
-    console.log("details button clicked");
-    let name = this.getAttribute("nme");
-    let imgsrc = this.getAttribute("imgsrc");
-    let description = this.getAttribute("descr");
-
-    view_details(name, imgsrc, description);
-}));
-
-let modal_btn = document.querySelectorAll(".ok-btn");
-modal_btn.forEach((btn) => btn.addEventListener("click", function(){
-    view_prev_content();
-}));
-
 function view_details(name, image, description){
-    mdl = description_modal(name,image,description).modal;
-    let content = document.querySelector("#content");
+    let mdl = `
+            <div id='card'>
+                <div class='close'><button id="close">X</button></div>
+                <div id="modal-content">
+                    <div>`+ name +`</div>
+                    <div><img src='`+ image +`' id="selected-img"></div>
+                    <div><center>`+ description +`</center></div>
+                    <button class='ok-btn'>OK</button>
+                </div>
+            </div>        
+    `;
+    let content = document.querySelector("#modal");
+    content.setAttribute("style", "display:flex;");
     content.innerHTML = mdl;
 }
 
 function view_prev_content(){
-    let content = document.querySelector("#content");
-    content.innerHTML = create_menu;
+    console.log("vpc");
+    let content = document.querySelector("#modal");
+    content.setAttribute("style", "display:none;");
+    content.innerHTML = "";    
 }
 
 console.log("Hello Friends!");

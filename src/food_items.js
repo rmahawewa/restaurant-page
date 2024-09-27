@@ -70,24 +70,24 @@ function food_item(id,image_src,name,description,price){
     return {id, image_src, name, description}
 }
 
-let b0 = food_item(0, bfst1, "Chedar cheese","Fresh chedar cheese made from cow milk. Unsweetened. 100g in one slice.", "$ 1.85");
-let b1 = food_item(1, bfst2, "Salted butter", "Fresh salted butter made from cow milk without added ingredients. 100g in one block.", "$ 2.25");
-let b2 = food_item(2, bfst3, "Mix fruit jam", "Ingredients: Orange, Pineapple, Strawberry, Gelatin, Sugar, Salt. 100g in one cup.", "$ 1.20");
+let b0 = food_item(0, bfst1, "Chedar cheese","Fresh chedar cheese made from cow milk. Unsweetened.", "$ 1.85");
+let b1 = food_item(1, bfst2, "Salted butter", "Fresh salted butter made from cow milk without added ingredients.", "$ 2.25");
+let b2 = food_item(2, bfst3, "Mix fruit jam", "Ingredients: Orange, Pineapple, Strawberry, Gelatin, Sugar, Salt.", "$ 1.20");
 let b3 = food_item(3, bfst4, "Pure bee honey", "100g in one jar.", "$ 3");
-let b4 = food_item(4, bfst5, "Banana", "Cavendish banans. Three bananas included in one pack.", "$ 1");
-let b5 = food_item(5, bfst6, "Coconut milk", "Can enjoy with Flat bread, Steamed peas or beans. 200ml in a jar", "$ 1");
-let b6 = food_item(6, bfst7, "Coconut chutney", "Ingredients: Shreaded coconut, water, curd, coconut oil, fried spices. Three cups in one bawl", "$ 3");
-let b7 = food_item(7, bfst8, "Coconut and spice paste", "Spice paste ingredients: Red chillie, onion, ginger, lemon juice, salt. Can enjoy with steamed peas and beans or with steamed sweet potatoes. 100g of shreaded coconut in one bawl", "$ 1.85");
-let b8 = food_item(8, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices. Three cups in one bawl", "$ 4");
-let b9 = food_item(9, bfst10, "Flat bread", "Ingredients: Wheat flour, coconut, salt, water. 200g in one bread", "$ 1.85");
-let b10 = food_item(10, bfst11, "Steamed peas and beans mix", "Ingredients: Red beans, white beans, green peas, chickpeas. Can enjoy with coconut milk or with shreaded coconut and sour spice paste. Three cups in one bawl", "$ 4");
-let b11 = food_item(11, bfst12, "Steamed white beans", "Can enjoy with coconut milk or with shreaded coconut and sour spice paste. Three cups in one bawl.", "$ 4" );
-let b12 = food_item(12, bfst13, "Fried mushrooms", "Fried mushrooms with added salt, pepper and garlic. Can enjoy with rice. One cup in one bawl.", "$ 1.85" );
-let b13 = food_item(13, bfst14, "Steamed red beans", "Can enjoy with coconut milk or with shreaded coconut and sour spice paste. Three cups in one bawl.", "$ 4");
-let b14 = food_item(14, bfst15, "Bread", "Whole wheat bread. Five slices for one plate", "$ 1");
-let b15 = food_item(15, bfst16, "Steamed sweet potatoes", "Can enjoy with shreaded coconut and sour spice paste. Three cups in one plate", "$ 1.25");
-let b16 = food_item(16, bfst17, "Steamed chickpeas", "Can enjoy with coconut milk or with shreaded coconut and sour spice paste. Three cups in one bawl.", "$ 4");
-let b17 = food_item(17, bfst18, "Rice", "Can enjoy with dhal curry. Three cups in one bawl", "$ 1.85");
+let b4 = food_item(4, bfst5, "Banana", "Cavendish banans. Well ripen bananas from Sri Lanka", "$ 1");
+let b5 = food_item(5, bfst6, "Coconut milk", "Can enjoy with Flat bread, Steamed peas or beans.", "$ 1");
+let b6 = food_item(6, bfst7, "Coconut chutney", "Ingredients: Shreaded coconut, water, curd, coconut oil, fried spices.", "$ 3");
+let b7 = food_item(7, bfst8, "Coconut and spice paste", "Spice paste ingredients: Red chillie, onion, ginger, lemon juice, salt. Can enjoy with steamed peas and beans or with steamed sweet potatoes.", "$ 1.85");
+let b8 = food_item(8, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices.", "$ 4");
+let b9 = food_item(9, bfst10, "Flat bread", "Ingredients: Wheat flour, coconut, salt, water.", "$ 1.85");
+let b10 = food_item(10, bfst11, "Steamed peas and beans mix", "Ingredients: Red beans, white beans, green peas, chickpeas. Can enjoy with coconut milk or with shreaded coconut and sour spice paste.", "$ 4");
+let b11 = food_item(11, bfst12, "Steamed white beans", "Can enjoy with coconut milk or with shreaded coconut and sour spice paste.", "$ 4" );
+let b12 = food_item(12, bfst13, "Fried mushrooms", "Fried mushrooms with added salt, pepper and garlic. Can enjoy with rice.", "$ 1.85" );
+let b13 = food_item(13, bfst14, "Steamed red beans", "Can enjoy with coconut milk or with shreaded coconut and sour spice paste.", "$ 4");
+let b14 = food_item(14, bfst15, "Bread", "Whole wheat bread. With more fibers and less calories", "$ 1");
+let b15 = food_item(15, bfst16, "Steamed sweet potatoes", "Can enjoy with shreaded coconut and sour spice paste.", "$ 1.25");
+let b16 = food_item(16, bfst17, "Steamed chickpeas", "Can enjoy with coconut milk or with shreaded coconut and sour spice paste.", "$ 4");
+let b17 = food_item(17, bfst18, "Rice", "Can enjoy with dhal curry.", "$ 1.85");
 
 let list_breakfast_items = [];
 list_breakfast_items.push(b0);
@@ -118,9 +118,9 @@ let l5 = food_item(5, lnch6, "Green pasta", "Ingredients: Wheat pasta, butter, a
 let l6 = food_item(6, lnch7, "Roasted veggies", "Includes: Cauliflower, Cabbage, Carrot, Okra, Squash, Celery, Potato, Corn, butter, salt, pepper powder", "$ 3.75");
 let l7 = food_item(7, lnch8, "Smashed potatoes", "Ingredients: Potato, fresh milk, butter, musted seeds, cumin seeds, basil, garlic, salt", "$ 3");
 let l8 = food_item(8, lnch9, "Veg burger", "Includes: Wheat bun, tomato, onion, celery leaves, cheese, fried mushroom, bell pepper, sesami seeds, salt, black pepper powder", "$ 2.95");
-let l9 = food_item(9, bfst18, "Rice", "Can enjoy with dhal curry. Three cups in one bawl", "$ 1.85");
-let l10 = food_item(10, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices. Three cups in one bawl", "$ 4");
-let l11 = food_item(11, bfst15, "Bread", "Whole wheat bread. Five slices for one plate", "$ 1");
+let l9 = food_item(9, bfst18, "Rice", "Can enjoy with dhal curry.", "$ 1.85");
+let l10 = food_item(10, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices.", "$ 4");
+let l11 = food_item(11, bfst15, "Bread", "Whole wheat bread.", "$ 1");
 
 let list_lunch_items = [];
 list_lunch_items.push(l0);
@@ -136,18 +136,18 @@ list_lunch_items.push(l9);
 list_lunch_items.push(l10);
 list_lunch_items.push(l11);
 
-let d0 = food_item(0, dnr1, "Idli", "Ingredients: Rice flour, Urdu dhal flour, Fenugreek powder, Salt, Water. 3 idlis for one plate", "$ 2.85");
-let d1 = food_item(1, dnr2, "Masala dosa", "Ingredients: Rice flour, Urdu dhal flour, Semolina, Water, Salt, Ghee, Potato, Cilantro, Cumin seeds, Musterd seeds, Garlic, Coconut chutney. One dosa for one plate", "$ 3");
+let d0 = food_item(0, dnr1, "Idli", "Ingredients: Rice flour, Urdu dhal flour, Fenugreek powder, Salt, Water.", "$ 2.85");
+let d1 = food_item(1, dnr2, "Masala dosa", "Ingredients: Rice flour, Urdu dhal flour, Semolina, Water, Salt, Ghee, Potato, Cilantro, Cumin seeds, Musterd seeds, Garlic, Coconut chutney.", "$ 3");
 let d2 = food_item(2, dnr3, "Pasta salad", "Ingredients: Wheat pasta, Vegitables, Curd, Lemon juice, Salt, Black pepper.", "$ 3.25");
-let d3 = food_item(3, dnr4, "Dumpling soup", "Ingredients: Wheat flour, vegitables, mushroom, green peas, corn seeds, mint, celery, basil, butter, salt, water. Four dumplings in one bawl", "$ 4");
+let d3 = food_item(3, dnr4, "Dumpling soup", "Ingredients: Wheat flour, vegitables, mushroom, green peas, corn seeds, mint, celery, basil, butter, salt, water.", "$ 4");
 let d4 = food_item(4, dnr5, "Pizza", "Ingredients: Mozeralla Cheese, Cheddar cheese, fried mushroom, cauliflower, tomato, garlic, butter, italian seasonings, pepper powder, salt", "$ 4.85");
-let d5 = food_item(5, dnr6, "Upma", "Ingredients: Semolina, butter, coconut milk, basil, celery, garlic, musted seeds, salt, green pepper. Four upma for a plate", "$ 2.65");
+let d5 = food_item(5, dnr6, "Upma", "Ingredients: Semolina, butter, coconut milk, basil, celery, garlic, musted seeds, salt, green pepper.", "$ 2.65");
 let d6 = food_item(6, dnr7, "Vegi soup", "Includes: Cauliflower, Cabbage, Carrot, Green onion, Squash, Celery, Potato, Corn, butter, salt, pepper powder", "$ 3.75");
-let d7 = food_item(7, dnr8, "Vegi salad", "Ingredients: Cabbage, Carrot, Cucumber, Bellpepper, Green peas, Onion, Basil, Mint, Curd, Lemon juice, Sugar, Green pepper, Black pepper. Three cups in one bawl", "$ 3");
-let d8 = food_item(8, bfst2, "Salted butter", "Fresh salted butter made from cow milk without added ingredients. 100g in one block.", "$ 2.25");
-let d9 = food_item(9, bfst18, "Rice", "Can enjoy with dhal curry. Three cups in one bawl", "$ 1.85");
-let d10 = food_item(10, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices. Three cups in one bawl", "$ 4");
-let d11 = food_item(11, bfst15, "Bread", "Whole wheat bread. Five slices for one plate", "$ 1");
+let d7 = food_item(7, dnr8, "Vegi salad", "Ingredients: Cabbage, Carrot, Cucumber, Bellpepper, Green peas, Onion, Basil, Mint, Curd, Lemon juice, Sugar, Green pepper, Black pepper.", "$ 3");
+let d8 = food_item(8, bfst2, "Salted butter", "Fresh salted butter made from cow milk without added ingredients.", "$ 2.25");
+let d9 = food_item(9, bfst18, "Rice", "Can enjoy with dhal curry.", "$ 1.85");
+let d10 = food_item(10, bfst9, "Dhal curry", "Ingredients: Lentils, coconut milk, chillie, garlik, salt and other spices.", "$ 4");
+let d11 = food_item(11, bfst15, "Bread", "Whole wheat bread. More fibers and less sugar", "$ 1");
 
 let list_dinner_items = [];
 list_dinner_items.push(d0);
@@ -206,7 +206,7 @@ let dst9 = food_item(8, dsrt9, "Cheese cake", "300g in one slice", "$ 3");
 let dst10 = food_item(9, dsrt10, "Red velvet cake", "300g in one slice", "$ 2.85");
 let dst11 = food_item(10, dsrt11, "Strawberry cheese cake", "300g in one slice", "$ 3");
 let dst12 = food_item(11, dsrt12, "Strawberry ice cream", "Three scoops in one wafer bawl", "$ 1.90");
-let dst13 = food_item(12, dsrt13, "Tiramisu", "300g in one slice", "$ 2.90");
+let dst13 = food_item(12, dsrt13, "Tiramisu", "Ingredients: Eggs, sugar, heavy cream, mascarpone cheese, cofee, rum, cocoa powder, ladies fingers and dark chocolate", "$ 2.90");
 let dst14 = food_item(13, dsrt14, "Vanilla ice cream", "Three scoops in one wafer bawl", "$ 1.50");
 
 let list_desserts = [];

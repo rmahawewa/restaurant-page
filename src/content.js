@@ -3,13 +3,15 @@ import {list_lunch_items} from "./food_items.js";
 import {list_dinner_items} from "./food_items.js"
 import {list_beverages} from "./food_items.js";
 import {list_desserts} from "./food_items.js";
+import gathering from "./asset/resource/img/gathering.png";
 
 function itm(itmid,img_src,name,description) {
     let item = `<div class='item'>
                                 <img id=`+ itmid +` class="img" src=`+ img_src +`>
                                 <label class='itm-name'>`+ name +`</label>                                
-                                <button class='details' data-nme=`+ name +` data-imgsrc=`+ img_src +` data-descr=`+ description +` >Details</button>
+                                <button class='details |`+ name +` |`+ img_src +` |`+ description +`' >Details</button>
                 </div>`;
+                
     return {item};
 }
 
@@ -60,21 +62,21 @@ let create_menu = `<p id="discount">50% off from every menu item for the first t
                         </div>
                     </div>`; 
 
-function description_modal(itm_name, img_src, description){
-    let modal = `
-        <div id='modal'>
-            <div id='card'>
-                <div class='close'><button id="close" onclick='view_prev_content()'>X<button></div>
-                <div id="modal-content">
-                    <div>`+ itm_name +`</div>
-                    <div><img src='`+ img_src +`' id="selected-img"></div>
-                    <div>`+ description +`</div>
-                    <button class='ok-btn'>ok</button>
-                </div>
+let home =`
+            <p><span id="topic">DECADES</span><span id="remain"> Restaurent</span></p>
+            <p id="head-prgh">To meet your friends after thousand years...</p>
+            <div id="details">
+                <img src="`+ gathering +`" id="img-indxpg">
             </div>
-        </div>            
-    `;
-    return modal;
-}
+        `;
 
-export {create_menu};
+// let desc = "**Here's a more detailed "About" description for a restaurant:**
+
+// **[Restaurant Name]** is a culinary haven where passion meets perfection. Nestled in the heart of [city/town], our restaurant offers a unique dining experience that tantalizes the senses. Inspired by [cuisine type], our menu showcases a harmonious blend of traditional flavors and modern techniques. 
+
+// From our handcrafted appetizers to our exquisite entrees, each dish is a testament to our commitment to quality and taste. Our talented chefs source the finest ingredients from local farmers and artisans, ensuring that every bite is fresh, flavorful, and unforgettable.
+
+// Whether you're celebrating a special occasion or simply seeking a delightful meal, **[Restaurant Name]** is the perfect destination. Our inviting atmosphere, attentive service, and exceptional cuisine will leave you wanting more. Join us for a culinary journey that will exceed your expectations.
+// ";
+
+export {create_menu, home};
