@@ -1,6 +1,7 @@
 import "./styles.css";
 import {home} from "./content.js";
 import { create_menu } from "./content.js";
+import {desc} from "./content.js";
 
 let option = document.querySelectorAll(".nav-btn");
 document.querySelector("#content").innerHTML = home;
@@ -38,7 +39,7 @@ let add_content = (id) => {
         
     }
     if(id.localeCompare("about-btn") === 0){
-        // content.innerHTML = ;
+        content.innerHTML = desc;
     }
 };
 

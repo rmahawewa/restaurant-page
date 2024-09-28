@@ -70,13 +70,15 @@ let home =`
             </div>
         `;
 
-// let desc = "**Here's a more detailed "About" description for a restaurant:**
+let desc = `<div id='contnr-about'>
+                <div id='about'>
+                    <h1>Our Restaurant</h1>
+                    <p>DECADES is a culinary haven where passion meets perfection to experience with your friends. Nestled in the heart of Colombo, our restaurant offers a unique dining experience that tantalizes the senses. Inspired by Sri Lankan cuisine, our menu showcases a harmonious blend of traditional flavors and modern techniques. </p>
+                    <p>From our handcrafted appetizers to our exquisite entrees, each dish is a testament to our commitment to quality and taste. Our talented chefs source the finest ingredients from local farmers and artisans, ensuring that every bite is fresh, flavorful, and unforgettable.</p>
+                    <p>Whether you're celebrating a special occasion or simply seeking a delightful meal, DECADES is the perfect destination. Our inviting atmosphere, attentive service, and exceptional cuisine will leave you wanting more. Join us for a culinary journey that will exceed your expectations.</p>
+                    <p>Location: No 1056/A, Kandy Road, Colombo, Sri Lanka.</p>
+                    <p>For more details - contact: +94 71 273 5639 </p>
+                </div>
+            </div>`;
 
-// **[Restaurant Name]** is a culinary haven where passion meets perfection. Nestled in the heart of [city/town], our restaurant offers a unique dining experience that tantalizes the senses. Inspired by [cuisine type], our menu showcases a harmonious blend of traditional flavors and modern techniques. 
-
-// From our handcrafted appetizers to our exquisite entrees, each dish is a testament to our commitment to quality and taste. Our talented chefs source the finest ingredients from local farmers and artisans, ensuring that every bite is fresh, flavorful, and unforgettable.
-
-// Whether you're celebrating a special occasion or simply seeking a delightful meal, **[Restaurant Name]** is the perfect destination. Our inviting atmosphere, attentive service, and exceptional cuisine will leave you wanting more. Join us for a culinary journey that will exceed your expectations.
-// ";
-
-export {create_menu, home};
+export {create_menu, home, desc};
